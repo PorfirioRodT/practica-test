@@ -1,0 +1,24 @@
+{
+  "name": "practica-test",
+  "version": "1.0.0",
+  "description": "Hi from Nano\r Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node files/workflow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PorfirioRodT/practica-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PorfirioRodT/practica-test/issues"
+  },
+  "homepage": "https://github.com/PorfirioRodT/practica-test#readme",
+  "dependencies": {
+    "eslint": "^8.18.0",
+    "jest": "^28.1.1"
+  }
+}

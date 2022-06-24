@@ -1,0 +1,21 @@
+name: JS file Workflow
+
+on:
+  pull_request:
+    branches:[main]
+
+jobs:
+  CI:
+    runs-on: windows-latest
+    steps: 
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with: 
+        node-version: 16.x
+    - run: npm ci
+    - uses: sibiraj-s/action-eslint@v2
+      with:
+        eslint-args: '--ignore-path=.gitignore --quiet'
+        extensions: 'js,jsx,ts,tsx'
+        annotations: true
+    - run: npm test
