@@ -1,7 +1,7 @@
 name: JS file Workflow
 
 on:
-  pull_request:
+  push:
     branches:[main]
 
 jobs:
