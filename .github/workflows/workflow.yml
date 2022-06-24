@@ -2,7 +2,7 @@ name: JS file Workflow
 
 on:
   push:
-    branches:[main]
+    branches: [main]
 
 jobs:
   CI:
