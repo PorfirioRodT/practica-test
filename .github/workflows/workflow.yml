@@ -19,7 +19,7 @@ jobs:
         extensions: 'js,jsx,ts,tsx'
         annotations: true
     - run: npm test
-    - uses: gonuit/heroku-docker-deploy@v1.3.3
+    - uses: mtsmachado8/heroku-deploy@v2.0.3
       with:
         email: ${{ secrets.HEROKU_EMAIL }}
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
