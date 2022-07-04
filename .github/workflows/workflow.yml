@@ -19,8 +19,8 @@ jobs:
         extensions: 'js,jsx,ts,tsx'
         annotations: true
     - run: npm test
-    - uses: mtsmachado8/heroku-deploy@v2.0.3
+    - uses: gonuit/heroku-docker-deploy@v1.3.3
       with:
         email: porfiriorodt@gmail.com
-        api_key: a26e7ccb-9824-4137-942e-12f6e16c1989
-        app_name: equipo7-app
+        heroku_api_key: a26e7ccb-9824-4137-942e-12f6e16c1989
+        heroku_app_name: equipo7-app
