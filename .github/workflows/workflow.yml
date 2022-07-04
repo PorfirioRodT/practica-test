@@ -22,5 +22,5 @@ jobs:
     - uses: gonuit/heroku-docker-deploy@v1.3.3
       with:
         email: ${{ secrets.HEROKU_EMAIL }}
-        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_api_key: ${{ 58bf432f-4870-4123-b95e-ce8502f3314f }}
         heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
