@@ -4,7 +4,7 @@
   "description": "Hi from Nano\r Testing",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --outputFile files/results.json --json",
     "start": "node files/workflow"
   },
   "repository": {

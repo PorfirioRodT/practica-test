@@ -1,0 +1,40 @@
+name: Environments file Workflow
+
+on:
+  workflow_run:
+    workflows: ["JS file Workflow"]
+    types: [completed]
+
+jobs:
+  dev:
+    runs-on: ubuntu-latest
+    environment: Dev
+    steps: 
+    - uses: actions/checkout@v3
+    - uses: gonuit/heroku-docker-deploy@v1.3.3
+      with:
+        email: ${{ secrets.HEROKU_EMAIL }}
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+  stage:
+    needs: dev
+    runs-on: ubuntu-latest
+    environment: Stage
+    steps: 
+    - uses: actions/checkout@v3
+    - uses: gonuit/heroku-docker-deploy@v1.3.3
+      with:
+        email: ${{ secrets.HEROKU_EMAIL }}
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+  prod:
+    needs: stage
+    runs-on: ubuntu-latest
+    environment: Prod
+    steps: 
+    - uses: actions/checkout@v3
+    - uses: gonuit/heroku-docker-deploy@v1.3.3
+      with:
+        email: ${{ secrets.HEROKU_EMAIL }}
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
