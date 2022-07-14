@@ -22,7 +22,7 @@ npm test
 
 ## How to Deploy the project
 
-To deploy the project you need to do the next set of steps:
+To deploy the project you need to do the next set of commands:
 
 ```
 heroku login
