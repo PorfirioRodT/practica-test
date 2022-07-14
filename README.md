@@ -2,11 +2,11 @@
 
 ## Description 
 
-The project consist in a JavaScript application that contains a method to do sum of a set of given numbers
+The project consist in a JavaScript application that contains a method to do sum of a set of given numbers.
 
 ## How to compile
 
-Well, this project cant be compile because it's a JavaScript Program, but you can run it with 
+Well, this project cant be compile because it's a JavaScript Program, but you can run it with: 
 
 ```
 npm start
@@ -14,7 +14,7 @@ npm start
 
 ## How to run the Tests
 
-In this case you just need to use the command
+In this case you just need to use the command:
 
 ```
 npm test
