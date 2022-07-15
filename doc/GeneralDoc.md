@@ -1,11 +1,11 @@
 # Workflow
 
-Utilizaremos la metodología de trabajo de Scrum. Esta metodología se lleva a cabo mediante iteraciones llamados sprints. Llevaremos a cabo cada 2 semanas el Sprint Planning y cada día los Daily Scrums por 15 minutos. Asimismo al finalizar cada sprint haremos los Sprint Review y Retrospective para analizar que podemos mejorar y cuales retos enfrentamos.
+We will use the Scrum work methodology. This methodology is carried out through iterations called sprints. We will perform the Sprint Planning every 2 weeks and the Daily Scrums for 15 minutes every day. Also at the end of each sprint we will do the Sprint Review and Retrospective to analyze what we can improve and what challenges we face.
 
-De igual modo, tendremos 3 principales roles para llevar a cabo esta metodología de desarrollo:
+Similarly, we will have 3 main roles to carry out this development methodology:
 
-Product Owner: Este rol es responsable, entre otras cosas, de garantizar una comunicación clara sobre el producto, de definir los criterios de aceptación y asegurar que se cumplan. 
+Product Owner: This role is responsible for, among other things, ensuring clear communication about the product, defining acceptance criteria, and ensuring compliance.
 
-Scrum Master: Este rol es responsable de asegurar un ambiente de trabajo productivo para el equipo, debe protegerlo de influencias externas, despejar los obstáculos y garantizar que se cumplan los principios, aspectos y procesos de la metodología Scrum.
+Scrum Master: This role is responsible for ensuring a productive work environment for the team, must protect it from external influences, clear obstacles and ensure that the principles, aspects and processes of the Scrum methodology are followed.
 
-Scrum Team: Consiste en un grupo de personas que trabajan en las historias de usuario en la lista de pendientes del sprint para crear los entregables del proyecto. 
+Scrum Team: Consists of a group of people who work on the user stories in the sprint backlog to create the project deliverables.
