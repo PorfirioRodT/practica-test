@@ -1,5 +1,5 @@
 # Branching Strategics 
-The branch strategy is based on The GitHub in which there are 2 main branches: "main" and "develop". In the main we will have the code that will be released for the deployment, while the develop branch is where the pre-production codes will be sent.
+The branch strategy that we use in our project is based on The GitHub Flow Branching Strategy in which there are 2 main branches: "main" and "develop". In the main we will have the code that will be released for the deployment, while the develop branch is where the pre-production codes will be sent.
 
 Similarly, we have other branches to add features that do not interfere with these and for each use case and will start with the name of “feature/<FeatureName>”.
  
