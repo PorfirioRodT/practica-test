@@ -1,4 +1,4 @@
-# General Project Dcomuntation
+# IDS 328 - Project Configuration Documentation
 
 ## Description 
 
