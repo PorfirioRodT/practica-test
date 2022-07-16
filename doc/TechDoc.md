@@ -17,3 +17,24 @@ Our project uses a versioning system called **Semantic Versioning (SemVer)** whi
 - **Z** stands for a **Patch Version**. Versions for patches are used for bug fixes. When a revision of the code is released as a patch, it means that the new features and APIs have not been added to the code, and that the revision is backward-compatible with the prior one. The most common usage is to denote a problem repair. The use of the code has not changed, which is the most crucial fact to understand.
 
 # Pipeline Description
+
+Our project workflow consists of three main jobs. Dev, Stage and Prod. The workflow of each job consists of the following:
+
+**Set up job:**
+This stage consists of downloading and configuring the job necessary environment configuration to start working on the next stage.
+
+First, it downloads the operating system Ubuntu version 20.04.4 LTS. The next step is to get the permission to the github repository, prepare the workflow directory, prepare all required actions, download the repository action, and download the heroku docker images.
+
+After the set up job finish, it's time to take some actions
+
+**Run actions/checkout@v3:**
+This task consists of downloading the branch that is being built, adding a repository directory to the temporary git global config. It initializes the repository, sets up the auth, fetches the repository being built and builds the images.
+
+**Run gonuit/heroku-docker-deploy:**
+This stage of the job consists of making an instance of the heroku image to a docker container and pushing the repository container to the heroku registry and releasing the container. This allows us to make automatic deployment to the heroku sistem.
+
+**Post Run actions/checkout:**
+In this stage it's time to make some git config on the container that has been pushed in the previous stage, and also starts the post job cleanup.
+
+**Complete Job:**
+This is the final stage, it consists of cleaning up orphan processes. This includes bash and node process termination.
